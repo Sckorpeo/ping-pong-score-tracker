@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong Tracker</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ppt.css">
+</head>
+
+<body>
+    <section class="main-container">
+        <div class="main-img">
+            <img src="02 Photos/lisa-keffer-KTDP7pRKNrU-unsplash.jpg" alt="">
+        </div>
+        <div class="title">Ping Pong Score Keeper</div>
+        <div class="container-content">
+            <h1><span class="p1-points">0</span> to <span class="p2-points">0</span></h1>
+            <p>Use the buttons below to keep score.</p>
+            <form action="" class="select-container" id="select-container">
+                <label for="points-dropdown">Playing To</label>
+                <select name="points-dropdown" class="points-dropdown" id="points-dropdown" form="select-container">
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+            </form>
+        </div>
+        <div class="button-container">
+            <button class="p1-plus1 active">+1 Player One</button>
+            <button class="p2-plus1 active">+1 Player Two</button>
+            <button class="reset active">Reset</button>
+        </div>
+
+    </section>
+
+    <script src="ppt_logic.js"></script>
+</body>
+
+</html>
